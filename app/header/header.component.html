@@ -1,0 +1,24 @@
+<mat-toolbar class="fixed-header">
+  <span ><img src="/assets/images/teenSmallLogo.png" height=30 width=41></span>
+<a mat-button routerLink='/Test'  routerLinkActive="active"><span class="fa fa-home fa-lg"></span> Self Test</a>
+  <a mat-button routerLink='/Home' routerLinkActive="active"><span class="fa fa-list fa-lg"></span> Home</a>
+  <a mat-button [matMenuTriggerFor]="menu"><span class="fa fa-home fa-lg"></span>Combating Stress</a>
+  <mat-menu #menu="matMenu" class="customize">
+    <button mat-menu-item routerLink="/Music" >Tab Your Rhythm</button>
+     <button mat-menu-item routerLink="/journalism" >Journal Your Feelings</button>
+    <button mat-menu-item routerLink="/Case" >Idea That Works</button>
+    <button mat-menu-item routerLink="/Motivate">Stories That Inspire</button>
+    <button mat-menu-item routerLink="/Recite" >Verses To Recite</button>
+  </mat-menu>
+  <a mat-button routerLink='/About' routerLinkActive="active"><span class="fa fa-list fa-lg"></span> About</a>
+  <a mat-button routerLink='/Contact' routerLinkActive="active"><span class="fa fa-address-card fa-lg"></span> Contact</a>
+  <a mat-button [matMenuTriggerFor]="menu1"><span class="fa fa-home fa-lg"></span>Glossary..</a>
+  <mat-menu #menu1="matMenu" class="customize">
+    <button mat-menu-item routerLink="/Key" >Mental Health</button>
+    <button mat-menu-item routerLink="/Mental">Know the Teen Brain</button>
+   </mat-menu>
+  <span class ="title-center">
+    <a mat-button  routerLink='/Experts'><span class ="fa fa-sign-in fa-lg"></span>Talk To Our Experts</a>
+    <a mat-button (click)= "openLoginDialog()"><span class ="fa fa-sign-in fa-lg"></span>Login</a>
+  </span>
+  </mat-toolbar>

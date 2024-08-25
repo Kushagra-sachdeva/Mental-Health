@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+      background-size: cover;
+  }
+  table#t01, th, td {     
+    font-size:80%;
+    border-spacing: 0;
+    border-padding: 0;
+    border: none;
+    border-collapse: collapse;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 20%;
+};

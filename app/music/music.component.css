@@ -1,0 +1,26 @@
+.sqs-audio-player {
+    background-color: #b3b3b3 !important;
+    background-image: linear-gradient(#eaeaea, #eaeaea) !important;
+    background: -webkit-linear-gradient(#b3b3b3, #eaeaea) !important;
+    border: 0px solid #b3b3b3 !important;
+    border-radius: 0px 0px 0px 0px;
+    color: #6B6B6B;
+  }
+  .audio-author {
+    color: #707070 !important;
+  }
+  .audio-title {
+    color: #ffffff !important;
+  }
+  .volume .bar.active {
+    border-right-color: #36b3a8 !important;
+  }
+  .volume .bar {
+    border-right-color: #b3b3b3 !important;
+  }
+  .progress {
+    background: none repeat scroll 0 0 #707070 !important;
+  }
+  .controls {
+    color: #707070 !important;
+  }

@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<table  id="t01">
+    <tr>
+        <td style="text-align: center;">
+         <div class="panel panel-success" style="width: 650px">
+        <div class="panel-heading" style="font-size:large;font-style: italic;">Gratitute List....</div>
+        <div class="panel-body" style="font-size:large;font-style: italic; color: darkviolet;">Things are not easy right now, but I am thankful for..</div>
+         <div class="panel-body form-group"><input type="text" style="font-size: medium;" [(ngModel)]="one" name = "one" class="no-outline" size="100" width="200"></div>
+        <div class="panel-body form-group"><input type="text" style="font-size: medium;"  [(ngModel)]="two" name = "two" class="no-outline" size="100" width="200"></div>
+        <div class="panel-body form-group"><input type="text" style="font-size: medium;"  [(ngModel)]="three" name = "three" class="no-outline" size="100" width="400"></div>
+        <div class="panel-body form-group"><input type="text" style="font-size: medium;"  [(ngModel)]="four" name = "four" class="no-outline" size="100" width="400"></div>
+        <div class="panel-body form-group"><input type="text" style="font-size: medium;"  [(ngModel)]="five" name = "five" class="no-outline" size="100" width="400"></div>
+        </div>
+        </td>
+<td>
+    <div>
+        <img src='/assets/images/gratitute.jpg' height="350">
+    </div>
+</td>
+</tr>
+<tr>
+    <td>
+
+    </td>
+    <td>
+        
+    </td>
+</tr>
+
+</table>
+<div class="form-group mt-4">    
+    <div class="row">    
+        <div class="col">    
+            <span><button type="button" class="btn btn-primary" (click)='save()'>Submit</button>  </span>
+        </div>
+        <div class="col">      
+            <span><button type="button" class="btn btn-success" (click)='share()'>Share</button> </span> 
+        </div>
+        <div class="col">    
+           <span> <button type="button" class="btn btn-info" (click)='clear()'>Clear</button></span>
+        </div>    
+    </div>    
+
+</div>    
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+img {
+    border: 4px solid #555;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 20%;
+  };

@@ -1,0 +1,39 @@
+<div style="background-image:url('/assets/images/back_image2.jpg') ; height: 50%;background-position: center;background-repeat: no-repeat;background-size: cover; text-align:center">
+  <h3 style="text-align:center;font-size:large" class="lead"><b>Adolescence is a new birth, for the higher and more completely human traits are now born</b></h3>
+    <h4 style="text-align:center" >What's your stress score? </h4>
+    <img src="/assets/images/test1.jpg">
+
+<br>
+<div>
+    <h1 style="text-align: center;">Answer the following 10 questions</h1>
+    <p style="text-align: center;color: darkblue;"><b>
+        {{que}}
+    </b>
+    </p>
+<div style="text-align: center; width: 100%;">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="1"  [(ngModel)]="count" checked>
+        <label for="exampleRadios1" >
+         Always  
+        </label>
+      </div>
+      <div class="form-check" >
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="5" [(ngModel)]="count">
+        <label for="exampleRadios2" >
+          Never
+        </label>
+      </div>
+      <div class="form-check" >
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="3" [(ngModel)]="count" >
+        <label for="exampleRadios3">
+          Sometimes
+        </label>
+    </div>
+</div>
+<br>
+<div>
+    <button type="button" [disabled]=" disable()" class="btn btn-primary btn-lg btn-block" (click)="btnClick()" > Next </button>
+</div>
+<br><br>
+</div>
+</div>

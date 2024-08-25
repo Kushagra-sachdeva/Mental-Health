@@ -1,0 +1,26 @@
+
+<form role="form" #myForm="ngForm" accept-charset="UTF-8" (ngSubmit)="onSubmit()" novalidate style="margin: 30px;">    
+        <div class="form-group">    
+            <input autofocus autocomplete="none" type="text" name="UserName" placeholder="Your Name"    
+                [(ngModel)]="contentdata.Title" class="form-control" required #PageContentTitle="ngModel"    
+                id="PageContentTitle">    
+        </div>    
+        <ckeditor [(ngModel)]="contentdata.Content" #PageContent="ngModel" name="PageContent" required    
+            [config]="[
+            { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] }]"   debounce="500">    
+        </ckeditor>    
+        <div class="form-group mt-4">    
+            <div class="row">    
+                <div class="col">    
+                    <span><button type="submit" class="btn btn-primary">Submit</button>  </span>
+                </div>
+                <div class="col">      
+                    <span><button type="button" (click)='share()' class="btn btn-success">Share</button> </span> 
+                </div> 
+                <div class="col">    
+                   <span> <button type="button" (click)='clear()' class="btn btn-info">Clear</button></span>
+                </div>    
+            </div>    
+        
+        </div>    
+    </form> 

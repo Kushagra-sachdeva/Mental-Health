@@ -1,0 +1,21 @@
+<div style="background-image:url('/assets/images/music2.jpg');height:800px;padding-top:62px;background-position: center;background-repeat:no-repeat;background-size:cover;">
+<table mat-table>
+ <tr>
+ <td >
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+       <p style="color: green; text-align: center;"> Tab To Your Rhythm </p>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ngx-audio-player  [playlist]="msaapPlaylist"  [displayTitle]="msaapDisplayTitle" [autoPlay]="false" 
+    muted="muted" [displayPlaylist]="msaapDisplayPlayList"
+        [displayVolumeControls]="msaapDisplayVolumeControls" [disablePositionSlider]="msaapDisablePositionSlider" 
+        [expanded]="true"></ngx-audio-player> 
+     </mat-expansion-panel>
+</mat-accordion>
+</td>
+</tr>
+</table>
+</div>

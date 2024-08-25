@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<table id="t01">
+<tr>
+    <td style="text-align: center;">
+        <div class="panel panel-success" style="width: 600px">
+        <div class="panel-heading" style="font-size:large;font-style: italic;">Things I am good At</div>
+         <div class="panel-body form-group">1.  <input type="text" style="font-size: medium;"  [(ngModel)]="one" class="no-outline" size="65" width="300"></div>
+        <div class="panel-body form-group">2.  <input type="text" style="font-size: medium;" [(ngModel)]="four" class="no-outline" size="65" width="300"></div>
+        <div class="panel-body form-group">3.  <input type="text" style="font-size: medium;"[(ngModel)]="two" class="no-outline" size="65" width="300"></div>
+        <div class="panel-body form-group">4. <input type="text" style="font-size: medium;" [(ngModel)]="three" class="no-outline" size="65" width="300"></div>
+        <div class="panel-body form-group">5. <input type="text" style="font-size: medium;" [(ngModel)]="five" class="no-outline" size="65" width="300"></div>
+        </div>
+    </td>
+    <td style="text-align: center;"> 
+        <div class="panel panel-primary" style="width: 600px">
+        <div class="panel-heading" style="font-size:large;font-style: italic;">What I Am Passionate about!</div>
+         <div class="panel-body form-group"><input type="text" [(ngModel)]="thir" class="no-outline" size="100" width="300"></div>
+         <div class="panel-body form-group"><input type="text" [(ngModel)]="six" class="no-outline" size="100" width="300"></div>
+        </div>
+        <br>
+        <div class="panel panel-info" style="width: 600px">
+            <div class="panel-heading" style="font-size:large;font-style: italic;">What I love most about ME</div>
+             <div class="panel-body form-group"><input type="text"  [(ngModel)]="seven" class="no-outline" size="100" width="300"></div>
+             <div class="panel-body form-group"><input type="text"  [(ngModel)]="eight" class="no-outline" size="100" width="300"></div>
+            </div>
+    </td>
+</tr>
+<tr>
+    <td style="text-align: center;">
+        <div class="panel panel-warning" style="width: 500px">
+            <div class="panel-heading" style="font-size:large;font-style: italic;">What I learnt from my mistake</div>
+             <div class="panel-body form-group"><input type="text"  [(ngModel)]="nine" class="no-outline" size="100" width="300"></div>
+            <div class="panel-body form-group"> <input type="text"  [(ngModel)]="ten" class="no-outline" size="100" width="300"></div>
+            <div class="panel-body form-group"> <input type="text"  [(ngModel)]="ele" class="no-outline" size="100" width="300"></div>
+            </div>
+    </td> 
+    <td style="text-align: center;">
+        <div class="panel panel-success" style="width: 500px">
+            <div class="panel-heading" style="font-size:large;font-style: italic;">Ways I can live my passion</div>
+             <div class="panel-body form-group"><input type="text"  [(ngModel)]="twe" class="no-outline" size="100" width="300"></div>
+            <div class="panel-body form-group"> <input type="text"  [(ngModel)]="for" class="no-outline" size="100" width="300"></div>
+            <div class="panel-body form-group"><input type="text"  [(ngModel)]="fif" class="no-outline" size="100" width="300"></div>
+            </div>
+    </td>
+</tr>
+<tr>
+    <td colspan="2" style="text-align: center;">
+     <div class="row text-center row-fluid">
+        <div class="panel panel-success" style="width: 500px;;">
+            <div class="panel-heading" style="font-size:large; font-style: italic;">Quotes that Inspire ME:</div>
+             <div class="panel-body form-group"><input type="text"  [(ngModel)]="sixt" class="no-outline" size="100" width="400"></div>
+            <div class="panel-body form-group"> <input type="text"  [(ngModel)]="sev" class="no-outline" size="100" width="400"></div>
+            
+        </div>
+        </div>
+    </td>
+</tr>
+</table>
+<div class="form-group mt-4">    
+    <div class="row">    
+        <div class="col">    
+            <span><button type="submit" class="btn btn-primary"  (click)='submit()'>Submit</button>  </span>
+        </div>
+        <div class="col">      
+            <span><button type="button" class="btn btn-success" (click)='share()'>Share</button> </span> 
+        </div>
+        <div class="col">    
+           <span> <button type="button" class="btn btn-info" (click)='clear()'>Clear</button></span>
+        </div>    
+    </div>    
+
+</div>    
+</body>
+</html>
+
+

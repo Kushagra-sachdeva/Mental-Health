@@ -1,0 +1,24 @@
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+     }
+  
+  .no-outline:focus {
+    outline: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  table#t01, th, td {     
+    width:300px;
+    font-size:80%;
+    border-spacing: 0;
+    border-padding: 0;
+    border: none;
+    border-collapse: collapse;
+}
